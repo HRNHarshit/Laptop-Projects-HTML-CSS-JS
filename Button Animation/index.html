@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+    <title>Button Animation</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrap cart">
+        <button class="btn btn-cart">Add to Cart</button>
+      </div>
+
+      <div class="wrap loading none">
+        <button class="btn btn-loading">
+          <i class="fa-solid fa-circle-notch fa-sm icon spin" style="color: #d6dbe6"></i>
+          Loading
+        </button>
+      </div>
+
+      <div class="wrap done none">
+        <button class="btn btn-done">
+          <i class="fa-solid fa-circle-check fa-xs icon" style="color: #d6dbe6"></i>
+          Done
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

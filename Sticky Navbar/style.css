@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-container {
+  background-image: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-container h1 {
+  backdrop-filter: blur(2px);
+  color: #00f100;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.text {
+  margin: 50px 5%;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a img {
+  backdrop-filter: blur(3px);
+  width: 250px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  backdrop-filter: blur(3px);
+  margin: 0 20px;
+  color: white;
+  font-family: cursive;
+  font-size: 1.3rem;
+}
+
+.navbar ul li a:hover {
+  text-shadow: 0 0 3px #ffff00, 0 0 5px #1eff00;
+}
+
+.navbar.active {
+  background-color: #817b7b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s;
+}
+
+.navbar.active ul li a {
+  color: black;
+}

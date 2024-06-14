@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 15%;
+}
+
+/**************** Slides  ***************/
+
+.slides {
+  width: 35%;
+}
+
+.carousel {
+  border: 2px solid #acacac;
+  border-radius: 50%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  height: 100%;
+  display: flex;
+  width: 400%;
+  transition: all 0.5s;
+}
+
+.slider section {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.controls ul {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  list-style: none;
+  display: flex;
+}
+
+.controls ul li {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  background: #333;
+}
+
+.controls ul li.selected {
+  background: transparent;
+}
